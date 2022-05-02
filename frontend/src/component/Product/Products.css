@@ -1,0 +1,141 @@
+.productsHeading{
+    margin:  2vmax auto;
+    width: 20vw;
+    border-bottom: 1px solid rgba(0,0,0,0.171);
+    padding: 2vmax;
+    color: rgba(0,0,0,0.678);
+    font: 600 4vmax monospace;
+    text-align: center;
+}
+
+.products{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 5vmax;
+    justify-content: center;
+    min-height: 30vh;
+}
+
+.paginationBox{
+    display: flex;
+    justify-content: center;
+    margin: 6vmax;
+}
+
+.pagination{
+    display: flex;
+    justify-content: center;
+    padding: 0;
+
+}
+
+.page-item{
+    background-color: #fff;
+    list-style: none;
+    border: 1px solid rgba(0,0,0,0.178);
+    padding: 1vmax 1.5vmax;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+.page-item:first-child{
+    border-radius: 5px 0 0 5px;
+}
+
+.page-link{
+    text-decoration: none;
+    font: 300 1.2vmax monospace;
+    color: rgb(80,80,80);
+    transition: all 0.3s;
+}
+
+.page-item:hover{
+    background-color: rgb(230,230,230);
+}
+
+.page-item:hover .page-link{
+    color: rgb(66, 64, 64);
+}
+
+.pageItemActive{
+    background-color: rgb(205, 146, 135);
+}
+
+.pageLinkActive{
+    color: white;
+}
+
+.filterBox{
+    width: 15vmax;
+    position: absolute;
+    top: 8vmax;
+    left: 3vmax;
+}
+
+.filterBox .MuiTypography-body1 {
+    /* font-size: 1rem; */
+    /* font-family: "Roboto", "Helvetica", "Arial", sans-serif; */
+    /* font-weight: 400; */
+    /* line-height: 1.5; */
+    margin-top: 33px;
+    /* letter-spacing: 0.00938em; */
+}
+
+
+.categoryBox{
+    padding: 0%;
+
+}
+
+.category-link{
+    list-style: none;
+    color: rgba(0,0,0,0.61);
+    font: 600 1vmax "Roboto";
+    margin: 0.4vmax;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+
+
+
+.category-link:hover{
+    color: rgba(236, 113, 91, 0.83);
+}
+
+.filterBox > fieldset{
+    border: 1px solid rgba(53, 41, 41, 0.234);
+    margin-top: 1vmax;
+}
+
+
+@media screen and (max-width: 600px) {
+
+    .productsHeading{
+        width: 40vw;
+       margin-top: 8vmax;
+    }
+    .filterBox{
+        width: 20vmax;
+        position: static;
+        margin: auto;
+    }
+
+    .page-link{
+        font: 300 1.7vmax "monospace";
+    }
+
+    .category-link{
+        font-size: 1.8vmax;
+    }
+
+    .MuiTypography-root.MuiTypography-body1{
+        font-size: 2.2vmax;
+        
+    }
+
+    .filterBox fieldset {
+        margin-top: 1vmax;
+    }
+    
+}
