@@ -14,3 +14,11 @@ SMPT_PORT =
 CLOUDINARY_NAME = 
 CLOUDINARY_API_KEY = 
 CLOUDINARY_API_SECRET =
+
+
+
+
+
+
+***PROJECT LINK***
+https://mern-stack-ecommerce-stock.herokuapp.com/ 
